@@ -3,7 +3,7 @@
 
 int main()
 {
-    int opc;
+    int opc, num1, num2, total;
     
     puts("***Calculadora de suma y resta***");
     puts("1. Suma");
@@ -12,10 +12,20 @@ int main()
     switch(opc)
     {
         case 1:
-            
+            puts("introduce el primer numero");
+            scanf("%d",&num1);
+            puts("Introduce el segundo numero");
+            scanf("%d",&num2);
+            total=num1+num2;
+            printf("el total es %d\n",total);
         break;
         case 2:
-            
+            puts("introduce el primer numero");
+            scanf("%d",&num1);
+            puts("Introduce el segundo numero");
+            scanf("%d",&num2);
+            total=num1-num2;
+            printf("el total es %d\n",total);
         break;
         default:
             puts("opcion invalida");
