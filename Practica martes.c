@@ -8,6 +8,7 @@ int main()
     puts("***Calculadora de suma y resta***");
     puts("1. Suma");
     puts("2. Resta");
+    puts("3. Salir");
     scanf("%d",&opc);
     switch(opc)
     {
@@ -26,6 +27,9 @@ int main()
             scanf("%d",&num2);
             total=num1-num2;
             printf("el total es %d\n",total);
+        break;
+        case 3: 
+            puts("Byes");
         break;
         default:
             puts("opcion invalida");
